@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-.Main{
+.Main {
     height: 100vh;
     width: 100%;
     padding: 20px;
@@ -12,89 +12,85 @@
     flex-direction: column;
     gap: 16px;
 }
-.header{
-    height: 16%;
-    background-color: rgb(3, 116, 255);
-   border-radius: 10px;
-   padding: 10px;
-   color: white;
-}
-.desc{
+.desc {
     font-family: Roboto;
     font-size: 12px;
     color: white;
     margin: 10px;
 }
-.bodycontainer{
-    height: 64%;
-    width: 100%;
+.header {
+    flex-grow: 1;
+    background-color: rgb(3, 116, 255);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.bodycontainer {
+    flex-grow: 3;
     display: flex;
     gap: 16px;
+    max-height: 60%;
 }
-.footer{
-    height: 16%;
+.footer {
+    flex-grow: 1;
     background-color: rgb(65, 74, 85);
     border-radius: 10px;
 }
-.sidebar-nav{
-    min-height: 100%;
-    width: 26%;
+.sidebar-nav {
+    flex-grow: 1;
     background-color: rgb(4, 247, 121);
     border-radius: 10px;
+    max-height: 100%;
     overflow-y: scroll;
 }
-.sidebar-nav{
+.sidebar-nav {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
-.sidebar-nav::-webkit-scrollbar{
+.sidebar-nav::-webkit-scrollbar {
     display: none;
 }
-.content-container{
-    height: 100%;
-    width: 100%;
+.content-container {
+    flex-grow: 5;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.main-content-sec{
+.main-content-sec {
     background-color: rgb(153, 0, 255);
-    width: 100%;
-    height: 50%;
     border-radius: 10px;
-   
+    flex-grow: 1;
 }
-.rel-and-cal-con{
-    height: 50%;
+.rel-and-cal-con {
     display: flex;
-    width: 100%;
     gap: 16px;
+    flex-grow: 1;
 }
-.call-action{
+.call-action {
     background-color: rgb(27, 36, 140);
-    width: 50%;
-     border-radius: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
 }
-.related-content{
+.related-content {
     background-color: rgb(83, 91, 11);
- border-radius: 10px;
-    width: 50%;
+    border-radius: 10px;
+    flex-grow: 1;
 }
-.navitems{
+.navitems {
     list-style-type: none;
+    display: flex;
+    flex-direction:column ;
 }
-.navitems li{
+.navitems li {
     font-family: Roboto;
     font-size: 14px;
-    padding: 16px;
-    padding-left: 30px;
-    
+    padding:24px ;
 }
-.navitems li a{
+.navitems li a {
     text-decoration: none;
     color: black;
 }
-.navitems li:hover{
+.navitems li:hover {
     background-color: rgb(99, 219, 115);
     cursor: pointer;
 }
